@@ -15,3 +15,8 @@ def test():
 @app.route("/character")
 def test2():
     return "characters page"
+    
+
+@app.route("/ParentsPortal")
+def test3():
+	return "Hello, [Parent]! Welcome to [Child]'s report"
