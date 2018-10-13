@@ -76,3 +76,7 @@ def repor3():
 @app.route("/Attendance")
 def attend():
 	return render_template("concept-clean/attendance.html")
+
+@app.route("/Assignments")
+def assignments():
+	return render_template("concept-clean/assignments.html")
