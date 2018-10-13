@@ -71,10 +71,34 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <link rel="stylesheet" href="https://formapi.io/assets/form_embed.v1.css" />
 <script type="text/javascript" src="https://formapi.io/assets/form_embed.v1.js"></script>
-here
+
+<button onclick="toEnglish()" cache="false">English</button>
+<button onclick="toEnglish()" cache="false">Chinese</button>
+<button onclick="toggle(this)" value="OFF">OFF</button>
 <div class="fa-form"></div>
+
 <script>
-  FormAPI.createForm('.fa-form', 'tpl_Zhrq5qQJpk7kxgjzTa');
+var isEnglish = true;
+function toEnglish() {
+  if (isEnglish) {
+    FormAPI.createForm('.fa-form', "tpl_M4pmqz9xprXy2hTX43");
+    isEnglish = false;
+  } else {
+    FormAPI.createForm('.fa-form', "tpl_Zhrq5qQJpk7kxgjzTa");
+    isEnglish = true;
+  }
+}
+function toggle(button) {
+    if(button.value=="OFF") {
+        button.value="ON"
+        button.innerHTML="ON"
+        FormAPI.createForm('.fa-form', "tpl_M4pmqz9xprXy2hTX43");
+    } else if(button.value=="ON") {
+        button.value="OFF"
+        button.innerHTML="OFF"
+        FormAPI.createForm('.fa-form', "tpl_Zhrq5qQJpk7kxgjzTa");
+    }
+}
 </script>
 
 

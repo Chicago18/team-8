@@ -69,12 +69,22 @@ Licence URI: https://www.os-templates.com/template-terms
   </nav>
 </div>
 
+
 <link rel="stylesheet" href="https://formapi.io/assets/form_embed.v1.css" />
 <script type="text/javascript" src="https://formapi.io/assets/form_embed.v1.js"></script>
-here
+
+<button onclick="toEnglish()">English</button>
+<button onclick="toChinese()">Chinese</button>
 <div class="fa-form"></div>
 <script>
-  FormAPI.createForm('.fa-form', 'tpl_Zhrq5qQJpk7kxgjzTa');
+function toEnglish() {
+  var APIid = 'tpl_Zhrq5qQJpk7kxgjzTa'
+  FormAPI.createForm('.fa-form', APIid);
+}
+function toChinese() {
+  var APIid = 'tpl_M4pmqz9xprXy2hTX43'
+  FormAPI.createForm('.fa-form', APIid);
+}
 </script>
 
 
