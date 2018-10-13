@@ -1,10 +1,7 @@
-require 'form_api'
+<link rel="stylesheet" href="https://formapi.io/assets/form_embed.v1.css" />
+<script type="text/javascript" src="https://formapi.io/assets/form_embed.v1.js"></script>
 
-client = FormAPI::Client.new
-response = client.generate_pdf(
-  template_id: 'YOUR_TEMPLATE_ID',
-  test: true,
-  data: { first_name: 'John', last_name: 'Smith' },
-  metadata: { user_id: 123 }
-)
-puts "Download your PDF at: #{response.submission.download_url}"
+<div class="fa-form"></div>
+<script>
+  FormAPI.createForm('.fa-form', 'tpl_Zhrq5qQJpk7kxgjzTa');
+</script>
