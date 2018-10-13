@@ -18,6 +18,11 @@ def test2():
     return "characters page"
     
 
-@app.route("/ParentsPortal")
+@app.route("/ParentPortal")
 def test3():
-	return "Hello, [Parent]! Welcome to [Child]'s report"
+	return render_template("/concept-clean/index.html")
+
+
+@app.route("/Enrollment")
+def Enrollment():
+	return "Form1: "
