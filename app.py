@@ -37,3 +37,19 @@ def test3():
 @app.route("/Enrollment")
 def Enrollment():
 	return render_template("/concept-clean/form.html", user=user, child=child)
+
+@app.route("/Enrollment/Form1")
+def Form1():
+	return render_template("/concept-clean/form1.html", user=user, child=child)
+
+@app.route("/Enrollment/Form2")
+def Form2():
+	return render_template("/concept-clean/form2.html", user=user, child=child)
+
+@app.route("/Enrollment/Form3")
+def Form3():
+	return render_template("/concept-clean/form3.html", user=user, child=child)
+
+@app.route("/Enrollment/Form4")
+def Form4():
+	return render_template("/concept-clean/form4.html", user=user, child=child)
