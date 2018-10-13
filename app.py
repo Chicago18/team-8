@@ -2,6 +2,14 @@ from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
+user = {'userName': 'Rohit', 
+		'childName': 'Megha'}
+
+child = {'childName': 'Megha',
+		 'grade': 4,
+		 'englishGrade': "D",
+		 'mathGrade': "E",
+		 'scienceGrade': "C"}
 
 @app.route("/")
 def hello():
@@ -20,9 +28,9 @@ def test2():
 
 @app.route("/ParentPortal")
 def test3():
-	return render_template("/concept-clean/index.html")
+	return render_template("/concept-clean/index.html", user=user)
 
 
 @app.route("/Enrollment")
 def Enrollment():
-	return "Form1: "
+	return render_template("/concept-clean/form.html", user=user, child=child)

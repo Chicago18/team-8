@@ -10,18 +10,20 @@ Licence URI: https://www.os-templates.com/template-terms
 <head>
 <title>Concept Clean</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="layout/styles/layout.css" type="text/css">
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery-defaultvalue.js"></script>
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/layout/styles/layout.css') }}">
+<script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/jquery.min.js') }}"></script>
+<script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/jquery-defaultvalue.js') }}"></script>
 <!-- homepage slider scripts -->
-<link rel="stylesheet" href="layout/scripts/supersized/supersized.css" type="text/css">
-<link rel="stylesheet" href="layout/scripts/supersized/supersized.shutter.css" type="text/css">
-<script src="layout/scripts/supersized/supersized.3.2.7.js"></script>
-<script src="layout/scripts/supersized/supersized.shutter.min.js"></script>
-<script src="layout/scripts/supersized/supersized.setup.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/layout/scripts/supersized/supersized.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/layout/scripts/supersized/supersized.shutter.css') }}">
+<script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/supersized/supersized.3.2.7.js') }}"></script>
+<script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/supersized/supersized.shutter.min.js') }}"></script>
+<script type= "text/javascript" src="{{ url_for('static', filename='layout/scripts/supersized/supersized.setup.js') }}"></script>
 <!-- / homepage slider scripts -->
 </head>
 <body>
+  <p>Hello, {{ user.username }}!</p>
+  <div>Form: <a href="/Enrollment">Form Page</a></div>
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
@@ -36,7 +38,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </fieldset>
     </form>
     <ul id="social">
-      <li><a href="#"><img src="images/demo/social/1.gif" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
       <li><a href="#"><img src="images/demo/social/1.gif" alt=""></a></li>
       <li><a href="#"><img src="images/demo/social/1.gif" alt=""></a></li>
       <li><a href="#"><img src="images/demo/social/1.gif" alt=""></a></li>
