@@ -1,3 +1,4 @@
+
 jQuery(function ($) {
     $.supersized({
         // Functionality
@@ -8,9 +9,10 @@ jQuery(function ($) {
         // Components							
 
         slides: [ // Slideshow Images
-        {image: 'images/slider/1.gif'}, 
-		{image: 'images/slider/2.gif'}, 
-		{image: 'images/slider/3.gif'}
+        {image: './static/js/layout/scripts/supersized/images/slider/math.jpg'}, 
+		{image: './static/js/layout/scripts/supersized/images/slider/grammar_cute.jpg'}, 
+		{image: './static/js/layout/scripts/supersized/images/slider/math_cute2.jpg'}
 		]
     });
 });
+

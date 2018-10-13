@@ -22,47 +22,34 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- / homepage slider scripts -->
 </head>
 <body>
-  <p>Hello, {{ user.username }}!</p>
-  <div>Form: <a href="/Enrollment">Form Page</a></div>
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
-      <h1><a href="index.html">C<span>oncept</span> C<span>lean</span></a></h1>
+      <h1><a href="index.html">C<span>hinese</span> M<span>utual</span> A<span>id</span> A<span>ssociation</span></a></h1>
       <h2>Free Website Template</h2>
     </div>
     <form action="#" method="post">
       <fieldset>
         <legend>Search:</legend>
         <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-        <input type="image" src="layout/images/search.gif" id="search" alt="Search">
+        <input type="image" src="{{ url_for('static', filename='images/search.gif') }}" id="search" alt="Search">
       </fieldset>
     </form>
     <ul id="social">
-      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static',filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
     </ul>
   </header>
 </div>
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
-      <li class="first active"><a href="index.html">Home</a></li>
-      <li><a href="pages/style-demo.html">Style Demo</a></li>
-      <li><a href="pages/full-width.html">Full Width</a></li>
-      <li><a href="#">DropDown</a>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </li>
-      <li><a href="pages/gallery.html">Gallery</a></li>
-      <li><a href="pages/portfolio.html">Portfolio</a></li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">A Very Long Link Text</a></li>
+      <li class="first active"><a href="https://www.chinesemutualaid.org/">Home</a></li>
+      <li><a href="pages/style-demo.html">Parents</a></li>
+      <li><a href="pages/full-width.html">Students</a></li>
     </ul>
   </nav>
 </div>
@@ -79,8 +66,8 @@ Licence URI: https://www.os-templates.com/template-terms
       <!-- ########################################################################################## --> 
       <!-- Shout -->
       <section id="shout">
-        <h1>C<span>ursus</span> P<span>enati</span></h1>
-        <p>&ldquo; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque &bdquo;</p>
+        <h1>W<span>elcome</span> F<span>amilies!</span></h1>
+        <p>A portal for parents and students: enhance skills in reading, writing, and math with Chinese Mutual Aid Association's fun educational games and keep track of student's progress!</p>
       </section>
       <!-- / Shout --> 
       <!-- ########################################################################################## --> 
@@ -90,74 +77,37 @@ Licence URI: https://www.os-templates.com/template-terms
         <ul>
           <li>
             <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
+              <figure><img src="{{ url_for('static', filename='images/demo/math_cute2.jpg') }}" alt="">
                 <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
+                  <header>Math</header>
+                  Complete math games to learn while having fun!</figcaption>
               </figure>
               </a></article>
           </li>
           <li>
             <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
+              <figure><img src="{{ url_for('static', filename='images/demo/grammar_cute.jpg') }}" alt="">
                 <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
+                  <header>Grammar</header>
+                 Improve grammar with games to learn while having fun!</figcaption>
               </figure>
               </a></article>
           </li>
           <li>
             <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
+              <figure><img src="{{ url_for('static', filename='images/demo/avatar.jpg') }}" alt="">
                 <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
+                  <header>Create an Avatar</header>
+                  Personalize your experience by following an avatar through the process!</figcaption>
               </figure>
               </a></article>
           </li>
           <li>
             <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
+              <figure><img src="{{ url_for('static', filename='images/demo/grades.jpg') }}" alt="">
                 <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
-              </figure>
-              </a></article>
-          </li>
-          <!-- SPLIT -->
-          <li>
-            <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
-                <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
-              </figure>
-              </a></article>
-          </li>
-          <li>
-            <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
-                <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
-              </figure>
-              </a></article>
-          </li>
-          <li>
-            <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
-                <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
-              </figure>
-              </a></article>
-          </li>
-          <li>
-            <article><a href="#">
-              <figure><img src="images/demo/235x235.gif" alt="">
-                <figcaption>
-                  <header>Metridi Conseque</header>
-                  Nonve nean justo partur odio phasellus consectetuer sem ac id nam risuspend consec tetuerant sapien urna fuscetuer.</figcaption>
+                  <header>Different Levels</header>
+                 Complete different levels based on grade level!</figcaption>
               </figure>
               </a></article>
           </li>
@@ -171,46 +121,6 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- Footer -->
 <div class="wrapper row4">
   <div id="footer" class="clear"> 
-    <!-- Section One -->
-    <section class="two_quarter first">
-      <h2 class="title">Meet The Team</h2>
-      <ul>
-        <li>
-          <figure class="clear">
-            <div class="imgl"><img src="images/demo/95x95.gif" alt=""></div>
-            <figcaption>
-              <p><strong><a href="#">Metuervestas mus lacinia</a></strong></p>
-              <p>Convallisijusto vestas mus pellentum aeneansa pibu lum in aliquam volut pat integest nulla. Acsed sed nunc at fring maurisusce at elis ut vitae laorem.</p>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="last">
-          <figure class="clear">
-            <div class="imgl"><img src="{{ url_for('static', filename='images/demo/95x95.gif') }}" alt=""></div>
-            <figcaption>
-              <p><strong><a href="#">Metuervestas mus lacinia</a></strong></p>
-              <p>Convallisijusto vestas mus pellentum aeneansa pibu lum in aliquam volut pat integest nulla. Acsed sed nunc at fring maurisusce at elis ut vitae laorem.</p>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-    <!-- Section Four -->
-    <section class="one_quarter">
-      <h2 class="title">Contact Us</h2>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Contact Form:</legend>
-          <label for="cf_name">Name:</label>
-          <input type="text" name="cf_name" id="cf_name" value="">
-          <label for="cf_email">Email:</label>
-          <input type="text" name="cf_email" id="cf_email" value="">
-          <label for="cf_message">Message:</label>
-          <textarea name="cf_message" id="cf_message" cols="45" rows="10"></textarea>
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
     <!-- / Section --> 
   </div>
 </div>

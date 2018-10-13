@@ -24,11 +24,14 @@ def test():
 @app.route("/character")
 def test2():
     return "characters page"
-    
+
+@app.route("/Home")
+def home():
+	return render_template("/concept-clean/index.html")    
 
 @app.route("/ParentPortal")
 def test3():
-	return render_template("/concept-clean/index.html", user=user)
+	return render_template("/concept-clean/ParentPortal.html", user=user)
 
 
 @app.route("/Enrollment")
