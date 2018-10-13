@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+Template Name: Concept Clean
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Gallery CSS
+*/
+
+#gallery{display:block; width:100%; line-height:1.6em;}
+#gallery ul{margin:0; padding:0; list-style:none;}
+#gallery li{display:block; float:left; width:237px; height:237px; margin:0 0 4px 4px; padding:0;}
+#gallery li a img{display:block; border:1px solid #000000;}
+#gallery li a:hover img{border-color:#FF6600;}
+
+#gallery ul > li:nth-child(4n+1){margin-left:0;}
