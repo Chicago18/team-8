@@ -1,1 +1,7 @@
-tpl_M4pmqz9xprXy2hTX43
+<link rel="stylesheet" href="https://formapi.io/assets/form_embed.v1.css" />
+<script type="text/javascript" src="https://formapi.io/assets/form_embed.v1.js"></script>
+
+<div class="fa-form"></div>
+<script>
+  FormAPI.createForm('.fa-form', 'tpl_M4pmqz9xprXy2hTX43');
+</script>
