@@ -29,10 +29,13 @@ def test2():
 def home():
 	return render_template("/concept-clean/index.html")    
 
+@app.route("/Student")
+def student():
+	return render_template("/concept-clean/fullwidth.html") 
+
 @app.route("/ParentPortal")
 def test3():
 	return render_template("/concept-clean/ParentPortal.html", user=user)
-
 
 @app.route("/Enrollment")
 def Enrollment():
@@ -53,3 +56,23 @@ def Form3():
 @app.route("/Enrollment/Form4")
 def Form4():
 	return render_template("/concept-clean/form4.html", user=user, child=child)
+
+@app.route("/Report_Card")
+def report():
+	return render_template("concept-clean/index_k.html")
+
+@app.route("/junior")
+def report1():
+	return render_template("concept-clean/table20182019.html")
+
+@app.route("/soph")
+def report2():
+	return render_template("concept-clean/table20172018.html")
+
+@app.route("/fresh")
+def repor3():
+	return render_template("concept-clean/table20162017.html")
+
+@app.route("/Attendance")
+def attend():
+	return render_template("concept-clean/attendance.html")

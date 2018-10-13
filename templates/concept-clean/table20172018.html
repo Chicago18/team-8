@@ -8,7 +8,7 @@ Licence URI: https://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Concept Clean</title>
+<title>Chinese Mutual Aid Association</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/layout/styles/layout.css') }}">
 <script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/jquery.min.js') }}"></script>
@@ -19,62 +19,109 @@ Licence URI: https://www.os-templates.com/template-terms
 <script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/supersized/supersized.3.2.7.js') }}"></script>
 <script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/supersized/supersized.shutter.min.js') }}"></script>
 <script type= "text/javascript" src="{{ url_for('static', filename='js/layout/scripts/supersized/supersized.setup.js') }}"></script>
-<!-- / homepage slider scripts -->
 </head>
 <body>
-
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
       <h1><a href="index.html">C<span>hinese</span> M<span>utual</span> A<span>id</span> A<span>ssociation</span></a></h1>
-      <t><h1>Welcome, {{user.userName}}!</h1>
     </div>
     <form action="#" method="post">
       <fieldset>
         <legend>Search:</legend>
         <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-        <input type="image" src="{{ url_for('static', filename='images/search.gif') }}" id="search" alt="Search">
+        <input type="image" src="../layout/images/search.gif" id="search" alt="Search">
       </fieldset>
     </form>
     <ul id="social">
-      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
-      <li><a href="#"><img src="{{ url_for('static', filename='images/demo/social/1.gif') }}" alt=""></a></li>
+      <li><a href="#"><img src="../images/demo/social/1.gif" alt=""></a></li>
+      <li><a href="#"><img src="../images/demo/social/1.gif" alt=""></a></li>
+      <li><a href="#"><img src="../images/demo/social/1.gif" alt=""></a></li>
+      <li><a href="#"><img src="../images/demo/social/1.gif" alt=""></a></li>
+      <li><a href="#"><img src="../images/demo/social/1.gif" alt=""></a></li>
     </ul>
   </header>
 </div>
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
-      <li><a href="/Home">Home</a></li>
-      <li class="first active"><a href="pages/style-demo.html">Parents</a></li>
-      <li><a href="/Enrollment">Enrollment</a></li>
-      <li><a href="/Report_Card">Report Card</a></li>
-      <li><a href="/Attendace">Attendance</a></li>
+      <li class="first active"><a href="../index_m.html">Home</a></li>
+      <li><a href="index_k.html">Parents</a></li>
+      <li><a href="full-width.html">Students</a></li>
+      
     </ul>
   </nav>
 </div>
-
-
-<!-- Footer -->
-<div class="wrapper row4">
-  <div id="footer" class="clear"> 
-    <!-- / Section --> 
+<!-- content -->
+<div class="wrapper row3" text-align="center">
+  <div id="container"  class="clear"> 
+    <table style="width:100%">
+  <h1 >John Smith's Report Card for 2017-2018</h1>
+  <h2>Grades given on a scale of 1-4:</h2>
+  <h3>4 : Exceeds Expectations</h3>
+  <h3>3-3.9 : Meets Expectations</h3>
+  <h3>2-3 : Progressing Toward Expectations</h3>
+  <h3><2 : Not Meeting Expectations</h3>
+  <tr>
+    <th></th>
+    <th>Q1</th>
+    <th>Q2</th> 
+    <th>Q3</th>
+    <th>Q4</th>
+  </tr>
+  <tr>
+    <th>Reading</th>
+    <td>2.6</td>
+    <td>2.8</td>
+    <td>2.7</td>
+    <td>2.9</td>
+  </tr>
+  <tr>
+    <th>Writing</th>
+    <td>2.7</td>
+    <td>3.0</td>
+    <td>2.9</td>
+    <td>3.1</td>
+  </tr>
+  <tr>
+    <th>Listening</th>
+    <td>2.8</td>
+    <td>3.0</td>
+    <td>3.3</td>
+    <td>3.1</td>
+  </tr>
+  <tr>
+    <th>Math</th>
+    <td>3.1</td>
+    <td>3.3</td>
+    <td>3.2</td>
+    <td>3.5</td>
+  </tr>
+  <tr>
+    <th>Social Studies</th>
+    <td>2.8</td>
+    <td>2.9</td>
+    <td>3.1</td>
+    <td>3.4</td>
+  </tr>
+  <tr>
+    <th>Science</th>
+    <td>2.9</td>
+    <td>3.2</td>
+    <td>3.1</td>
+    <td>3.3</td>
+  </tr>
+  <tr>
+    <th>Character Development</th>
+    <td>2.8</td>
+    <td>3.1</td>
+    <td>3.3</td>
+    <td>3.2</td>
+  </tr>
+</table>
   </div>
 </div>
-<!-- Copyright -->
-<div class="wrapper">
-  <footer id="copyright" class="clear">
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-  </footer>
-</div>
-<script>
-$(document).ready(function () {
-    $("#cf_name, #cf_email, #cf_message").defaultvalue("Name", "Email", "Message");
-});
-</script>
+<!-- Footer -->
+
 </body>
 </html>
