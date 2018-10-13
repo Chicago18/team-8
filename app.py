@@ -12,6 +12,6 @@ def test():
     return "assignments page"
 
 
-@app.route("character")
+@app.route("/character")
 def test2():
     return "characters page"
